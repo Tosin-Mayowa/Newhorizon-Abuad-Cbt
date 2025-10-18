@@ -6,7 +6,7 @@ export default function Login(){
     return (
         <div class="login-container">
         <h1>Welcome</h1>
-            <form>
+            <form>src/app/(auth)/login/page.tsx
                 <label htmlFor="Username">Username:</label>
                 <input type="text" id="Username" placeholder=.../>
                 <label htmlFor="password">Password:</label>
@@ -14,5 +14,5 @@ export default function Login(){
                 <button type="submit">Login</button>
             </form>
         </div>
-    )
+    );
 }
