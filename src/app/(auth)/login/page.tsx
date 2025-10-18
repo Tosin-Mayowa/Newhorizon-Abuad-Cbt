@@ -2,7 +2,7 @@
 
 
 
-export {};
+import Link from "next/link";
 
 declare global {
     namespace JSX {
@@ -19,7 +19,22 @@ declare global {
 
 export default function Login() {
     return (
-        <>
+       <>
+         <nav className="w-[60%]  flex justify-center padding-20">
+          <ul className="w-[60%]  flex justify-between items-center">
+            <li className="">
+              <Link href="/" className=" text-[18px]">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/login">Login</Link>
+            </li>
+          </ul>
+        </nav>
         <div className="login-container">
             <h1>Welcome</h1>
             <form>
@@ -30,6 +45,6 @@ export default function Login() {
                 <button type="submit">Login</button>
             </form>
         </div>
-        </>
+      </>
     );
 }
