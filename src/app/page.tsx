@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import "./globals.css";
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
             </li>
             <li>
               <Link href="/login">Login</Link>
+            </li>
+             <li>
+                <a href="/adminsignup">Signup</a>
             </li>
           </ul>
         </nav>
